@@ -11,5 +11,71 @@ html,body{
 
 .main{
     height: 100%;
-    background-color: hsl(342.86deg 14.29% 61.57%);
+    background-color:rgba(152, 143, 190, 0.716);
+    display: flex;
+}
+
+#part-1{
+    height: 100%;
+    width: 20%;
+    /* background-color: red; */
+}
+#part-2{
+    height: 100%;
+    width: 90%;
+   
+    background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+#mini-part-2{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    right: 0;
+    bottom: 10%;
+    background-image: url(https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    );
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mini-overlay{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(152, 143, 190, 0.455);
+
+}
+
+
+#part-3{
+    height: 100%;
+    width: 8%;
+    /* background-color: rgb(111, 0, 255); */
+}
+
+
+#left-heading{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+#left-heading>h1{
+    
+    font-size: 90px;
+    line-height: 75px;
+    font-family: monument;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 5px;
+    
 }
