@@ -133,7 +133,16 @@ main #img3{
     position: absolute;
     right: 7%;
     bottom: 0%;
+    
 
+}
+
+main img {
+    transition: margin 0.8s ease;
+}
+
+main img:hover {
+margin-top: -20px;
 }
 
 
