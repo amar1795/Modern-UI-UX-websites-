@@ -73,6 +73,11 @@ nav #part-2 a:nth-last-child(1) #green
     background-color: springgreen;
 }
 
+nav #part-2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    font-size: 18px;
+}
+
 nav #part-2 a:nth-last-child(1):hover #green{
     left: 0%;
     z-index: -1;
