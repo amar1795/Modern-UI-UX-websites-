@@ -95,6 +95,7 @@ main>h1{
     text-transform: capitalize;
     /* font-weight: 100; */
     position: relative;
+    z-index: 1;
 }
 
 main>h1::after{
@@ -104,10 +105,35 @@ main>h1::after{
     height: 16px;
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg
     );
-    bottom: 0;
+    bottom:-5%;
     left: 50%;
     transform: translate(-50%,0);
 }
 
+main #img1{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+
+}
+
+main #img2{
+    height: 280px;
+    width: 270px;
+    position: absolute;
+    right: 27%;
+    top: 20%;
+
+}
+main #img3{
+    height: 300px;
+    width: 290px;
+    position: absolute;
+    right: 7%;
+    bottom: 0%;
+
+}
 
 
