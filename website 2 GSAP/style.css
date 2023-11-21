@@ -20,6 +20,9 @@ main{
     width: 100%;
     background-color: #fff;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav{
@@ -82,4 +85,29 @@ nav #part-2 a:nth-last-child(1):hover #green{
     left: 0%;
     z-index: -1;
 }
+
+main>h1{
+    
+    font-size: 6vw;
+    font-weight: 100;
+    width: 60%;
+    text-align: center;
+    text-transform: capitalize;
+    /* font-weight: 100; */
+    position: relative;
+}
+
+main>h1::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg
+    );
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
 
