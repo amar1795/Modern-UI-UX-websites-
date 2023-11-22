@@ -18,7 +18,7 @@ gsap.from("#img3",{
     y:-60
 })
 
-gsap.from("main>h1",{
+gsap.from("main #page1>h1",{
     delay:0.4,
     opacity:0,
     duration:1,

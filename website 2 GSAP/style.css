@@ -19,8 +19,9 @@ main{
     height: 100%;
     width: 100%;
     background-color: #fff;
-    position: relative;
+    /* position: relative; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -33,8 +34,9 @@ nav{
     top: 0;
     width: 100%;
     height: 100px;
-    /* background-color: red; */
+    background-color: #fff;
     padding: 0 20px;
+    z-index: 999;
 }
 
 nav>h1{
@@ -86,22 +88,31 @@ nav #part-2 a:nth-last-child(1):hover #green{
     z-index: -1;
 }
 
-main>h1{
+#page1{
+    height: 100vh;
+    background-color: black;
+}
+
+
+#page1>h1{
     
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 100;
-    width: 60%;
+    width: 55%;
     text-align: center;
     text-transform: capitalize;
     /* font-weight: 100; */
-    position: relative;
+    position: absolute;
+    left: 22%;
+    top: 45%;
+    
     z-index: 1;
 }
 
-main>h1::after{
+#page1>h1::after{
     content: "";
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 16px;
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg
     );
@@ -110,7 +121,7 @@ main>h1::after{
     transform: translate(-50%,0);
 }
 
-main #img1{
+#page1 #img1{
     height: 500px;
     width: 400px;
     position: absolute;
@@ -119,7 +130,7 @@ main #img1{
 
 }
 
-main #img2{
+#page1 #img2{
     height: 280px;
     width: 270px;
     position: absolute;
@@ -127,7 +138,7 @@ main #img2{
     top: 20%;
 
 }
-main #img3{
+#page1 #img3{
     height: 300px;
     width: 290px;
     position: absolute;
@@ -137,12 +148,18 @@ main #img3{
 
 }
 
-main img {
+#page1 img {
     transition: margin 0.8s ease;
 }
 
-main img:hover {
+#page1 img:hover {
 margin-top: -20px;
 }
 
-
+#page2{  
+    /* position: absolute; */
+    /* top: 100vh;; */
+    height:100vh;
+    width: 100%;
+    background-color: red;
+}
