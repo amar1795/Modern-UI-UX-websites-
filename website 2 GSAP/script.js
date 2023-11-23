@@ -26,3 +26,14 @@ gsap.from("main #page1>h1",{
 })
 
 
+gsap.from("#page2 h1,#page2 h4,#page2 #about-us,#page2 #first-box",{
+    opacity:0,
+    stagger:0.5,
+    scrollTrigger:{
+        trigger:"#page2 #first-box",
+        scoller:"#page2",
+        start:"top 60%",
+        markers:true   
+    }
+})
+
