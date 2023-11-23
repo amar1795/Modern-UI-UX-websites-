@@ -156,7 +156,7 @@ margin-top: -20px;
 }
 
 #page2{  
-    position: absolute;
+    position: relative;
     top: 100vh;;
     height:70vh;
     width: 100%;
@@ -170,17 +170,20 @@ margin-top: -20px;
 
 
 #page2 h1{
-    width: 60%;
+    max-width: 904px;
     font-size: 45px;
     text-align: center;
     font-weight: 100;
     margin: 55px 0px;
+    z-index: 12;
+    position: relative;
 }
 
 #page2 h5{
     font-size: 22px;
     font-family: gilroy;
     font-weight: 500;
+    margin-left: 10px;
 }
 
 
@@ -212,6 +215,24 @@ margin-top: -20px;
 
 }
 
+
+#page2 #first-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+#page2 #round{
+    /* position: absolute; */
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: springgreen;
+    /* top: 18%;
+    left: 32%; */
+}
+
 #arrow-div>img{
     z-index: 1;
 }
@@ -232,10 +253,25 @@ margin-top: -20px;
     background-color: springgreen;
 }
 
+/* both the upper green div and the hover one should have the complete address 
+like #page2 #about-us #arrow-div:hover #green-div wihtout this the hover won't work
+ */
 #page2 #about-us #arrow-div:hover #green-div{
     left: 0%;
     
 }
 
+#page2>h1::after{
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 70px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    top: 60%;
+    left: 40%;
+    z-index: -1;
+    transform: translate(-50%,0);
+
+}
 
 
