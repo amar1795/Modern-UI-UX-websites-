@@ -33,7 +33,7 @@ gsap.from("#page2 h1,#page2 h4,#page2 #about-us,#page2 #first-box",{
         trigger:"#page2 #first-box",
         scoller:"#page2",
         start:"top 60%",
-        markers:true   
+        // markers:true   
     }
 })
 
